@@ -773,10 +773,6 @@ body {
         margin-bottom: 20px;
     }
 
-    .product-card img {
-        max-width: 300px;
-    }
-
     .product-card h3 {
         font-size: 2rem;
     }
