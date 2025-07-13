@@ -797,3 +797,187 @@ body {
         0 0 40px red,
         0 0 60px red;
 }
+
+.contact-section {
+    padding: 80px 50px;
+    background: linear-gradient(to bottom, #111, #000);
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #ed1d24;
+    text-shadow: 0 0 10px rgba(251, 8, 4, 0.7);
+    margin-bottom: 50px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.contact-form-container {
+    max-width: 800px; /* Increased width for better alignment with site */
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #ed1d24;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for form */
+    gap: 20px;
+}
+
+.contact-form-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+}
+
+.contact-form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.9), transparent);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contact-form-container:hover::before {
+    left: 100%;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout for name and email */
+    gap: 20px;
+    align-items: start;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #ed1d24;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: scale(1.02);
+    border-color: #ff4d4d;
+    box-shadow: 0 0 20px rgba(255, 21, 0, 0.7);
+}
+
+.contact-form input:nth-child(1),
+.contact-form input:nth-child(2) {
+    grid-column: span 1; /* Name and Email in two columns */
+}
+
+.contact-form input:nth-child(3) {
+    grid-column: span 2; /* Subject spans both columns */
+}
+
+.contact-form textarea {
+    grid-column: span 2; /* Message spans both columns */
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    grid-column: span 2; /* Button spans both columns */
+    justify-self: center;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    background: #ed1d24;
+    border: none;
+    color: #000;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 10, 6, 0.7);
+}
+
+.contact-form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contact-form button:hover::before {
+    left: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr; /* Stack all fields on mobile */
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        grid-column: span 1; /* Reset to single column */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
