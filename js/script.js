@@ -75,15 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
             emailInput.value = '';
         });
     }
-
-    socialIcons.forEach(icon => {
-        icon.addEventListener('click', (e) => {
-            e.preventDefault();
-            const platform = icon.getAttribute('data-platform');
-            console.log(`Clicked social icon: ${platform}`);
-            alert(`Follow Volt on ${platform.charAt(0).toUpperCase() + platform.slice(1)}!`);
-        });
-    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
