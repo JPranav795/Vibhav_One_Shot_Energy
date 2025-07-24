@@ -187,10 +187,10 @@ body {
 }
 
 .intro-text {
-  font-size: 1.4rem; /* Slightly larger */
+  font-size: 1.4rem;
   max-width: 700px;
   line-height: 1.6;
-  color: #ffffff; /* Optional: change based on your background */
+  color: #ffffff; 
 }
 
 .cta-button {
