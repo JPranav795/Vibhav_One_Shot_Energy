@@ -112,15 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const buyButtons = document.querySelectorAll('.buy-button');
-
-    buyButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const productCard = button.closest('.product-card');
-            const productName = productCard.getAttribute('data-product');
-            console.log(`Buy button clicked for: ${productName}`);
-            alert(`Added Volt ${productName.charAt(0).toUpperCase() + productName.slice(1)} to your cart!`);
-        });
-    });
+document.querySelector('.buy-button').addEventListener('click', function() {
+    window.location.href = 'contact.html';
 });
