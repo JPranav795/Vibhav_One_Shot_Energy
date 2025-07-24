@@ -208,6 +208,8 @@ body {
 .cta-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 21, 0, 0.7);
+    background: rgba(255, 21, 0, 0.7);
+    color: #ffffff;
 }
 
 .product-showcase {
