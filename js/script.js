@@ -111,7 +111,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
-document.querySelector('.buy-button').addEventListener('click', function() {
-    window.location.href = 'contact.html';
-});
