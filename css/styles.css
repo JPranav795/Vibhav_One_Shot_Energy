@@ -661,7 +661,7 @@ body {
     }
 }
 
-.faq-section, .about-section {
+.faq-section, .about-section, .intro-section {
     padding: 80px 50px;
     background: linear-gradient(to bottom, #111, #000);
     text-align: center;
@@ -669,7 +669,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.faq-section h2, .about-section h2 {
+.faq-section h2, .about-section h2, .intro-section h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
     color: #ed1d24;
