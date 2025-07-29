@@ -193,6 +193,16 @@ body {
   color: #ffffff; 
 }
 
+.intro-text br{
+    line-height: 2;
+}
+
+.Intro p {
+  display: block;
+  width: 100%; /* ensures full width */
+  margin: 0 0 1em 0; /* optional spacing */
+}
+
 .cta-button {
     padding: 15px 40px;
     font-size: 1.2rem;
