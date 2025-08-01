@@ -933,7 +933,7 @@ body {
     background: linear-gradient(to bottom, #111, #000);
     text-align: center;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -942,7 +942,7 @@ body {
 }
 
 .contact-section h2 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 3rem;
     color: #ed1d24;
     text-shadow: 0 0 10px rgba(251, 8, 4, 0.7);
@@ -951,8 +951,8 @@ body {
 }
 
 .contact-form-container {
-    max-width: 800px; /* Increased width for better alignment with site */
-    margin: 0 auto;
+    max-width: 100%; /* Increased width for better alignment with site */
+    margin: 20 auto;
     background: rgba(255,255,255,0.1);
     border: 2px solid #ed1d24;
     border-radius: 15px;
@@ -960,7 +960,7 @@ body {
     position: relative;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr; /* Single column for form */
     gap: 20px;
 }
@@ -987,10 +987,10 @@ body {
 }
 
 .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two-column layout for name and email */
-    gap: 20px;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
 }
 
 .contact-form input,
